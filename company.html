@@ -1,50 +1,50 @@
-﻿<!DOCTYPE html>                                         <!--html5を用いたhtmlファイルであることの宣言-->
+﻿<!DOCTYPE html><!--html5を用いたhtmlファイルであることの宣言-->
 <html>
 <head>
-    <meta charset="utf-8">                               <!--文字コードをhead内に書く-->
-	<title>フルーツアンドベジタブルショップ</title>               <!--タブに表示させるタイトル-->
+	<meta charset="utf-8"><!--文字コードをhead内に書く-->
+	<title>フルーツアンドベジタブルショップ</title><!--タブに表示させるタイトル-->
 	<link rel="stylesheet" href="style.css"><!--style.cssを読み込む-->
 </head>
 <body>
-<header>
-<!--ヘッダ　ここから-->
-	     <img src="images/logo.gif" alt="フルーツアンドベジタブルショップ" height="62" width="172">
-	
-		<ul>                                               <!--箇条書きしたい部分をulで囲む-->
-			<li><a href="index.html">ホーム</a></li>                                  <!--ulの中に表示したいものをliで囲む-->
-			<li><a href="news.html">ニュース</a></li><!--a hrefにはクリックした時のジャンプ先、次にリンクを張る対象物を記載して/aで閉じる-->
-			<li><a href="fruit.htm.">フルーツ</a></li>
-			<li><a href="vegetable.html">ベジタブル</a></li>
-			<li><a href="company.html">企業情報</a></li>
-			<li><a href="contact.html">お問い合わせ</a></li>
-		</ul>
-</header>	<!--ヘッダ　ここまで-->
-	<!--メイン　ここから-->
-	<h2>企業情報</h2>
-	
-	<h3>店舗情報</h3>
-	
-	<table><!--表を作りたい時は全体をtableで囲む（線を入れたい時はborder=""もプラス-->
-	
-	    <tr><th>営業時間</th>
-			<td>11：00～19：00</td></tr><!--1行分をtrで囲む-->
-		<tr><th>電話番号</th><!--thは項目名-->
-			<td>03-4567-8900</td></tr><!--tdはデータ-->
-		<tr><th>住所</th>
-			<td>東京都新宿区中新宿1-2-3-401</td></tr>
-	
-	</table>
-	
-	<h3>アクセス</h3>
-	<p>
-		<img src="images/company_map.gif" alt="地図"　height="290" width="400">
-	</p>
-	
-	<!--メイン　ここまで-->
-	<!--フッダ　ここから-->
-		<address>フルーツアンドベジタブル株式会社<!--addressは作者情報要素（斜字表示される）--><br>
-			Copyright Fruit and Vegetable Corporation. All rights reserved.</address>
-	<!--フッダ　ここまで--></td>
-</body>
+	<div id="wrap">
+		<header><!--ヘッダ　ここから-->
+			<img src="images/logo.gif" alt="フルーツアンドベジタブルショップ" height="62" width="172">
+			<ul>
+			<li><a href="index.html">ホーム</a></li>
+				<li><a href="news.html">ニュース</a></li>
+				<li><a href="fruit.html">フルーツ</a></li>
+				<li><a href="vegetable.html">ベジタブル</a></li>
+				<li><a href="company.html">企業情報</a></li>
+				<li><a href="contact.html">お問い合わせ</a></li>
+			</ul>
+		</header><!--ヘッダ　ここまで-->
+		<!--メイン　ここから-->
+		<h2>企業情報</h2>
 
-</html>
+		<h3>店舗情報</h3>
+
+		<table><!--表を作りたい時は全体をtableで囲む（線を入れたい時はborder=""もプラス-->
+
+			<tr><th>営業時間</th>
+				<td>11：00～19：00</td></tr><!--1行分をtrで囲む-->
+				<tr><th>電話番号</th><!--thは項目名-->
+					<td>03-4567-8900</td></tr><!--tdはデータ-->
+					<tr><th>住所</th>
+						<td>東京都新宿区中新宿1-2-3-401</td></tr>
+
+					</table>
+
+					<h3>アクセス</h3>
+					<p>
+						<img src="images/company_map.gif" alt="地図"　height="290" width="400">
+					</p>
+
+					<!--メイン　ここまで-->
+					<!--フッダ　ここから-->
+					<address>フルーツアンドベジタブル株式会社<!--addressは作者情報要素（斜字表示される）--><br>
+						Copyright Fruit and Vegetable Corporation. All rights reserved.</address>
+						<!--フッダ　ここまで--></td>
+					</div>
+				</body>
+
+				</html>

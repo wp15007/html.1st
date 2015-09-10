@@ -1,10 +1,48 @@
-	body {
+	ul {
+        background-color: #88aa00;/*ul範囲のカラーをグリーンにする*/
+        padding: 10px 20px;/*ボックス内側に余白*/
+
+    }
+    li {
+        list-style-type: none;/*noneはマーカー（・とか◆とか）なし*/
+        display: inline;/*liを横一列にする*/
+        padding: 20px;
+    }
+
+    li a:link {
+        color: #ffffff;
+    }
+
+    li a:visited{
+        color: ##eeee00;
+    }
+
+    li a:hover{/*ポインタを合わせた時のリンク*/
+        color: #000000;
+        text-decoration: none;/*下線を消す*/
+
+    }
+　　　
+    body {
         color: #535353;/*カラーをグレイに設定（数字6桁の左2桁は赤の強さ、真ん中は緑、右は青）*/
         font-size: 13px;
         line-height: 1.5;/*行間*/
+        text-align: center;/*センタリング*/
 
 	}
     
+    #wrap { /*"wrap"と名前を付けた部分の幅を770pxに設定*/
+        width:770px;/*"wrap"と名前を付けた部分の幅を770pxに設定*/
+        margin: 0 auto;/*センタリング*/
+        text-align: left;/*文字は左詰め*/
+    }
+    .itemphoto {/*class"itemphoto"と名前を付けた部分のスタイル*/
+        float: left;/*左寄せ*/
+        margin-right: 20px;
+        margin-bottom: 50px;
+
+    }
+
     h2 {
     	font-size: 185%;
     	border-left: 15px solid #668800;/*ボックスの左に線を入れる*/
@@ -16,6 +54,7 @@
         padding: 5px;
         border: 1px solid #668800;
         font-size: 154%;
+        clear: left;/*floteの影響を受けずに左寄せ*/
        }
     h4 {
         font-size: 124%;
@@ -24,6 +63,7 @@
     table {
         border: 3px ridge #666666;
         border-collapse: collapse;/*隣接する線を重ねて表示する*/
+        box-shadow: 10px 10px;/*自力で追加。ボックスに影をつける*/
     }
     th {
         border: 1px solid #999999;
@@ -43,12 +83,14 @@
     	text-align: right;/*右に寄せる*/
     	border-top: 1px solid #000000;/*ボックスの上部に線を入れる*/
     	padding-top: 10px;/*ボックスの内側上部に余白*/
+        clear: left;/*floteの影響を受けずに左寄せ*/
     }
     
     header {/*自力で追加*/
-    	background-color: #ffff50;
-        border-style : solid;
+    	background-color: #ff20ff;
+        border-style : solid;/*solidは一本線*/
         border-color : #000000;
-        font-size: 110%;
+        border-radius: 10px;/*角を丸く*/
+        font-size: 100%;
         font-family: "メイリオ", Meiryo, sans-serif;
     }/*自力で追加*/
