@@ -1,28 +1,72 @@
-	ul {
-        background-color: #88aa00;/*ul範囲のカラーをグリーンにする*/
-        padding: 10px 20px;/*ボックス内側に余白*/
+	//ul {
+    //  background-color: #88aa00;/*ul範囲のカラーをグリーンにする*/
+    //  padding: 10px 20px;/*ボックス内側に余白*/
 
     }
     li {
         list-style-type: none;/*noneはマーカー（・とか◆とか）なし*/
         display: inline;/*liを横一列にする*/
-        padding: 20px;
+        padding: 1px;
     }
 
-    li a:link {
+    //li a:link{
+    //    color: #ffffff;
+    //}
+
+    //li a:visited{
+    //    color: ##eeee00;
+    //}
+
+    //li a:hover{/*ポインタを合わせた時のリンク*/
+    //    color: #000000;
+    //   text-decoration: none;/*下線を消す*/
+
+    //}
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding:  0;
+        font-size: 12px;
+        overflow: hidden;
+        background-color: #88aa00;
+    }
+
+    li {
+        float: left;
+        margin-right: 0px;
+        width: 125px;
+        text-align: center;
+        border-right: solid 1px #ffffff;
+    }
+    li:first-child a {
+        border-left: solid 1px #ffffff;
+
+    }
+    li a {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        border-bottom: solid 5px transparent;
+        text-decoration: none;
+    }
+
+    il a link{
         color: #ffffff;
+        text-decoration: none;
     }
 
-    li a:visited{
-        color: ##eeee00;
+    il a:visited{
+        color: #eeee00;
+        text-decoration: none;
     }
 
-    li a:hover{/*ポインタを合わせた時のリンク*/
+    li a:hover {
         color: #000000;
-        text-decoration: none;/*下線を消す*/
-
+        text-decoration: none;
+        border-bottom: solid 5px #cc9900;
     }
-　　　
+
+    
     body {
         color: #535353;/*カラーをグレイに設定（数字6桁の左2桁は赤の強さ、真ん中は緑、右は青）*/
         font-size: 13px;
@@ -44,11 +88,11 @@
     }
 
     h2 {
-    	font-size: 185%;
+    	font-size: 150%;
     	border-left: 15px solid #668800;/*ボックスの左に線を入れる*/
     	padding-left: 20px;/*ボックスの内側左に余白を入れる*/
     	color: blue;/*自力で追加*/
-        }
+    }
 
     h3 {
         padding: 5px;
@@ -86,8 +130,8 @@
         clear: left;/*floteの影響を受けずに左寄せ*/
     }
     
-    header {/*自力で追加*/
-    	background-color: #ff20ff;
+    //header {/*自力で追加*/
+    	background-color: #ff2000;
         border-style : solid;/*solidは一本線*/
         border-color : #000000;
         border-radius: 10px;/*角を丸く*/
